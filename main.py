@@ -1,4 +1,5 @@
 import Condition
+import Whole_investigation
 # 메인메소드 돌릴곳
 # 애자일 방법론을 따르기로 결정
 # 이번엔 객체지향을 온전히 따르기로 결정
@@ -12,4 +13,24 @@ import Condition
 #     -> 조건에 대한 자세한 이해와 다양한 경험필요
 #     -> 다만 가장 쉽게 자료형 설정가능
 print("a")
-Condition.algorithm()
+
+
+#알고리즘 선택하기
+wayToUse = 0
+
+#조건생성
+#         wayToUse = 0
+# 전수조사
+#         wayToUse = 1
+
+
+
+#실행부
+
+#만약 조건생성일경우
+if wayToUse == 0:
+    #필요한 정보(이전날 근무, 영외활동자 리스트) 세팅
+    Condition.setting()
+    #알고리즘 실행
+    Condition.algorithm()
+
